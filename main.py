@@ -3,11 +3,11 @@ def main():
       file_contents = f.read()
       wc = len(file_contents.split())
       cc = count_chars(file_contents)
-      result = f"""
+      print(f"""
       --- Begin report of books/frankenstein.txt ---
       {wc} words found in the document
-      """
-      print(result)
+      """)
+
       for k,v in cc.items():
          if k.isalpha():
             print(f"The '{k}' character was found {v} times")
